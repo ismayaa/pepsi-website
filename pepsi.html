@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pepsi</title>
+    <link rel="stylesheet" href="pepsi.css">
+</head>
+<body>
+  <section class="sec">
+<header>
+   <a href="#"><img src="./logo.png"  class="logo"></a> 
+   <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">What`s new</a></li>
+    <li><a href="#">Newsletter</a></li>
+    <li><a href="#">Contact</a></li>
+   </ul>
+</header>
+<div class="content">
+  <div class="textBox">
+    <h3>That`s What <br><span>I like</span> </h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+      Eligendi quod tenetur exercitationem blanditiis excepturi earum
+       mollitia fugiat, voluptatibus non. Earum minus voluptatibus impedit!</p>
+       <a href="#">View all Products</a>
+  </div>
+  <div class="imageBox">
+    <img src="./blue.png" class="pepsi">
+  </div>
+</div>
+<ul class="thumb">
+  <li><img src="./blue.png" onclick="imgSlider('blue.png');changeBgColor('#0062be')"></li>
+  <li><img src="./20220925_124619.png" onclick="imgSlider('20220925_124619.png');changeBgColor('#e60ce2')"></li>
+  <li><img src="./20220925_124724.png" onclick="imgSlider('20220925_124724.png');changeBgColor('#1e1e1e')"></li>
+</ul>
+<ul class="sci">
+  <li><a href="#"><img src="./facebook.png" alt=""></a></li>
+  <li><a href="#"><img src="./twitter.png" alt="."></a></li>
+  <li><a href="#"><img src="./instagram.png" alt=""></a></li>
+
+</ul>
+  </section> 
+<script type="text/javascript">
+    function imgSlider(anything){
+     document.querySelector('pepsi').src = anything;
+    }
+    function changeBgColor(color){
+      const sec = document.querySelector('sec');
+      sec.style.background = color;
+    }
+</script>
+</body>
+</html>
